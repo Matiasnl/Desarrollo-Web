@@ -29,13 +29,24 @@
 	font-size: 48px;
 	color: #03001d;
 	margin-bottom: 0;
-	/*padding: 15px 0;*/
+	animation: right-to-left 2s ease;
 }
 
 .textContainer .description{
 	max-width: 50%;
 	font-size: 20px;
 	padding: 20px 0;
+	animation: left-to-right 2s ease;
+}
+
+@keyframes left-to-right{
+	0% {transform: translateX(-750px);}
+	100% {transform: translateX(0px);}
+}
+		
+@keyframes right-to-left{
+	0% {transform: translateX(750px);}
+	100% {transform: translateX(0px);}
 }
 
 

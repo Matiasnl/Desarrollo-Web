@@ -50,15 +50,24 @@ a{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
+	height: 100%;
 }
 
 .headerSection{
-	display: inline-block;
-	align-items: flex-end;
+	display: inline;
 	margin-right: 10px;
 	width: auto;
-	color: #ffffff ;
+	height: 100%;
+	color: #ffffff;
 }
+
+.headerSection a{
+	transition: ease 0.6s;
+}
+
+.headerSection a:hover{
+	font-size: 22px;
+}	
 
 
 @media screen and (min-width: 768px){
@@ -73,6 +82,12 @@ a{
 	.headerSection{
 		margin-right: 40px;
 	}
+
+	.headerSection a:hover{
+		font-size: 24px;
+	}	
+
+
 }
 
 
