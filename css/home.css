@@ -1,40 +1,15 @@
-.banner{
-	background-image: url(../assets/banner.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	height: 400px;
-}
-
-/*.banner span{
-	color: white;
-	font-size: 36px;
-	display: flex;
-	align-self: center;
-	justify-self: center;
-}
-*/
-.container{
-	display: grid;
-	grid-template-rows: auto 1fr;
-}
-
-.textContainer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.textContainer h2{
+.d-flex h2{
+	padding-top: 30px;
 	font-family: 'Mochiy Pop P One', sans-serif;
-	font-size: 48px;
+	font-size: 44px;
 	color: #03001d;
 	margin-bottom: 0;
 	animation: right-to-left 2s ease;
 }
 
-.textContainer .description{
+.d-flex .description{
 	max-width: 50%;
-	font-size: 20px;
+	font-size: 16px;
 	padding: 20px 0;
 	animation: left-to-right 2s ease;
 }
@@ -51,11 +26,11 @@
 
 
 @media screen and (min-width: 768px){
-	.textContainer .description{
-	max-width: 34%;
-	font-size: 20px;
-	padding: 20px 0;
-	font-family: Arial, sans-serif;
+	.d-flex h2{
+		font-size: 48px;
 	}
 
+	.d-flex .description{
+		font-size: 20px;
+	}
 }

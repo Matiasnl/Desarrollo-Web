@@ -1,9 +1,7 @@
 .container{
-	display: flex;
-	flex-direction: column;
 	margin: 5%;
 }
 
-input, textarea{
-	width: 25%;
+label{
+	font-weight: bold;
 }
