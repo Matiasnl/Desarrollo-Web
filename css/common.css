@@ -1,32 +1,13 @@
 body{
 	margin: 0;
-	min-height: 100vh;
+	padding-top: 50px;
 	background-color: #DBE2EF;
+	min-height: 100vh;
+	
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: 1fr auto;
 	font-family: Arial, sans-serif;
 	overflow-y: scroll;
-}
-
-#header{
-	position: sticky;
-	left: 0;
-	top: 0;
-	height: 65px;
-	width: 100%;
-	background-color: #03001d;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	z-index: 100;
-}
-
-#footer{
-	display: flex;
-	background-color: #03001d;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 65px;
 }
 
 .title{
@@ -37,115 +18,3 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 }
-
-a{
-	color: inherit;
-	text-decoration: none;
-	align-self: center;
-	font-size: 18px;
-	font-family: Arial, sans-serif;
-}
-
-.headerSectionContainer{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	height: 100%;
-}
-
-.headerSection{
-	display: inline;
-	margin-right: 10px;
-	width: auto;
-	height: 100%;
-	color: #ffffff;
-}
-
-.headerSection a{
-	transition: ease 0.6s;
-}
-
-.headerSection a:hover{
-	font-size: 22px;
-}	
-
-
-@media screen and (min-width: 768px){
-	a{
-		font-size: 20px;
-	}
-
-	.title{
-		font-size: 24px;
-	}
-
-	.headerSection{
-		margin-right: 40px;
-	}
-
-	.headerSection a:hover{
-		font-size: 24px;
-	}	
-
-
-}
-
-
-
-/*---------ANTES-----*/
-
-/*body{
-	margin: 0;
-	background-color: #DBE2EF;
-}
-
-#header{
-	position: sticky;
-	left: 0;
-	top: 0;
-	display: flex;
-	background-color: #03001d;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 65px;
-	width: 100%;
-	
-}
-
-#footer{
-	display: flex;
-	background-color: #03001d;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 65px;
-}
-
-.title{
-	margin-left: 20px;
-	color: #ffffff ;
-	font-family: 'Mochiy Pop P One', sans-serif;
-	align-self: center;
-	font-size: 24px;
-}
-
-a{
-	color: inherit;
-	text-decoration: none;
-	align-self: center;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-}
-
-.headerSectionContainer{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-}
-
-.headerSection{
-	display: inline-block;
-	align-items: flex-end;
-	margin-left: 50px;
-	width: 100px;
-	color: #ffffff ;
-}*/
