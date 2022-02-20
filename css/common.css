@@ -18,3 +18,19 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 }
+
+.headerItem{
+	transition: ease 0.6s;
+}
+
+.headerItem:hover{
+	transform: translateX(15px);
+}
+
+
+@media screen and (min-width: 992px){
+	.headerItem:hover{
+		transform: scale(1.2);
+	}
+
+}
