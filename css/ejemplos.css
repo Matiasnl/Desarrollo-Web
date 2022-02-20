@@ -1,22 +1,15 @@
-.container{
-	display: grid;
-	grid-template-rows: auto;
-	justify-content: center;
-	margin: 50px 0 50px 50px;
-	grid-gap: 25px;
-}
-
 .ejemplo{
-	height: 250px;
-	width: 400px;
-	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	transition: 0.5s ease;
 }
 
+.ejemploTitulo{
+	align-self: center;
+	pointer-events: none;
+	font-weight: bolder;
+}
 
-@media screen and (min-width: 768px){
-	.container{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
+.ejemplo:hover{
+	transform: scale(1.1);
 }
