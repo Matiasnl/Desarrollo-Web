@@ -1,0 +1,32 @@
+@import 'variables';
+
+body{
+	margin: 0;
+	padding-top: 50px;
+	background-color: $background-color;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	font-family: $main-font;
+	overflow-y: scroll;
+}
+
+.title{
+	margin-left: 20px;
+	color: #ffffff ;
+	font-family: $title-font;
+	align-self: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.headerItem{
+	transition: ease 0.6s;
+	&:hover{
+		transform: translateX(15px);
+		@media screen and (min-width: 992px){
+			transform: scale(1.2);
+
+		}
+	}
+}
