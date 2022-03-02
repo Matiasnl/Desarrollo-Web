@@ -1,4 +1,15 @@
 @import 'variables';
+@import 'contacto';
+@import 'ejemplos';
+@import 'home';
+@import 'servicios';
+@import 'tips';
+
+$redes:(
+	facebook: #3B5998,
+	twitter: #55ACEE,
+	instagram: #ea4c89
+);
 
 body{
 	margin: 0;
@@ -27,6 +38,26 @@ body{
 		@media screen and (min-width: 992px){
 			transform: scale(1.2);
 
+		}
+	}
+}
+
+.socialMedia{
+	
+	.smIcon{
+		color: white;
+		font-size: 24px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		margin: 0 2px;
+		padding: 4px 0;
+		border-radius: 4px;
+
+	}
+	@each $red,$color in $redes{
+		.fa-#{$red}{
+			background-color: $color;
 		}
 	}
 }

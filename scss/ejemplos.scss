@@ -1,0 +1,17 @@
+@mixin flex-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.ejemplo{
+	@include flex-column;
+	transition: 0.5s ease;
+	&:hover{
+		transform: scale(1.1);
+	}
+	.ejemploTitulo{
+	align-self: center;
+	pointer-events: none;
+	font-weight: bolder;
+	}
+}
