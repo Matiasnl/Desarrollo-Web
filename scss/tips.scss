@@ -1,0 +1,30 @@
+.tipsContainer{
+	margin-top: 10px;
+}
+
+.tip{
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	gap: 15px;
+	margin: 40px 0;
+	
+	border-radius: 10px;
+}
+
+.tip-1{
+	@extends .tip;
+	background-color: #c0d1f0;
+	border-style: outset;
+}
+
+.tip-2{
+	@extends .tip;
+	background-color: #9cb9f0;
+	border-style: ridge;
+}
+
+.tip-3{
+	@extends .tip;
+	background-color: #78a2f0;
+	border-style: inset;
+}

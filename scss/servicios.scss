@@ -1,0 +1,32 @@
+.containerServicios{
+	display: grid;
+	grid-template-rows: auto;
+	justify-content: center;
+	margin-top: 20px;
+	.textContainer{
+		display: flex;
+		width: 600px;
+		flex-direction: column;
+		h2{
+			font-size: 44px;
+			font-weight: bold;
+		}
+	}
+	@media screen and (min-width: 768px){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0;
+		margin-left: 10%;
+	}
+}
+
+.media{
+	min-width: 374px;
+	min-height: 400px;
+	margin: 20px 0;
+	justify-self: center;
+}
+
+
